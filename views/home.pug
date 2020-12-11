@@ -1,0 +1,43 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+block style
+    style
+        include ../static/style.css
+block content
+   
+    section#introsection
+        div Welcome to Dance Academy
+        div.small Any Body Can Dance
+    section#missionsection
+      h2  Our Mission
+      div.card 
+        h3 Dance perfection
+        div.card-box
+          div.card-img
+            img(src="../static/img/img1.png", alt="")
+          div.card-content
+            p This is one of the best dance academy
+      div.card 
+        h3 Dance the way you like
+        div.card-box
+          div.card-img
+            img(src="../static/img/img2.png", alt="")
+          div.card-content
+            p This is one of the best dance academy
+      div.card 
+        h3 Exepert teaching
+        div.card-box
+          div.card-img
+            img(src="../static/img/img3.png", alt="")
+          div.card-content
+            p This is one of the best dance academy
+    section#sponsorsection
+        h3 Our Sponsors
+        div#sponsors
+        img(src="/static/img/sp1.png", alt="sponsor img" Class="spimage")
+        img(src="/static/img/sp2.png", alt="sponsor img" Class="spimage")
+        img(src="/static/img/sp3.png", alt="sponsor img" Class="spimage")
+        img(src="/static/img/sp4.png", alt="sponsor img" Class="spimage")
+    
